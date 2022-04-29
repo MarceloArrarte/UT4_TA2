@@ -9,7 +9,7 @@ package UT4_TA2;
  *
  * @author marce
  */
-public class TElementoAB implements IElementoAB {
+public class TElementoAB<T> implements IElementoAB {
 
     @Override
     public Comparable getEtiqueta() {
@@ -17,12 +17,12 @@ public class TElementoAB implements IElementoAB {
     }
 
     @Override
-    public Object getHijoIzq() {
+    public TElementoAB<T> getHijoIzq() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Object getHijoDer() {
+    public TElementoAB<T> getHijoDer() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -37,7 +37,7 @@ public class TElementoAB implements IElementoAB {
     }
 
     @Override
-    public Object buscar(Comparable unaEtiqueta) {
+    public TElementoAB<T> buscar(Comparable unaEtiqueta) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -1,14 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package UT4_TA2;
 
-public class ArbolBB implements IArbolBB {
+/**
+ *
+ * @author marce
+ */
+public class ArbolBB<T> implements IArbolBB {
 
     @Override
-    public boolean insertar(Object unElemento) {
+    public boolean insertar(TElementoAB unElemento) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Object buscar(Comparable unaEtiqueta) {
+    public TElementoAB buscar(Comparable unaEtiqueta) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
